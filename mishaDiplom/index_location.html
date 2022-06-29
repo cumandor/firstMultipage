@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Seepingdogs</title>
+ </head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="assets/images/logo2.png" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item info--link">
+                            <a class="menu__link active" href="index.html">Назад</a>
+                        </li>
+                         <li class="menu__item service--link">
+                            <a class="menu__link" href="price.html">Ціни</a>
+                        </li> 
+                        <li class="menu__item">
+                            <a class="menu__link location-active" href="index_location.html">мапа</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+     </header>
+
+     <h1 class="location_title">Мапа</h1>
+     
+     <div id="pam"></div>
+
+     <section class="map" id="map">
+        <div class="container3">
+            <div class="map__inner">
+                <form class="form">
+                    <h4 class="form__title">
+                       Напишить нам!
+                    </h4>
+                    <p class="form__text">
+                       Якщо ви бажаєте записатися на прийом, залиште свої дані та оберіть свого улюбленця.
+                    </p>
+
+		            <!-- Hidden Required Fields -->
+		            <input type="hidden" name="project_name" value="Sleepingdogs">
+		            <input type="hidden" name="admin_email" value="volovimihail@gmail.com">
+		            <input type="hidden" name="form_subject" value="Form">
+		            <!-- END Hidden Required Fields -->
+
+                    <input name="Name" class="fom__input-name" type="text" placeholder="Ім'я" required title="Only letters." pattern="[a-zA-Zа-яА-я]+">
+                    <input name="Phone" class="fom__input-phone" type="tel" placeholder="Телефон" required pattern="[+-0-1-2-3-4-5-6-7-8-9]+" title="Only numbers." maxlength="13">
+                    <input name="e-mail" class="fom__input-phone" type="email" placeholder="Е-mail" required>
+
+                    <p class="form__input-text">Оберіть тварину</p>
+                    <div class="form__lable-box">
+                        <label class="form__lable">
+                            <input class="form__input-radio" type="radio" name="radio" checked>
+                            <div class="form__pet ">
+                                <img class="form__pet-img" src="assets/images/dog2.png" alt="">
+                                <p class="form__pet-price">  <span>200 grn</span></p>
+                            </div>
+                            <div class="form__radio-style form__radio-style--dog"></div>
+                        </label>
+                        <label class="form__lable">
+                           <input class="form__input-radio" type="radio" name="radio" >
+                           <div class="form__pet">
+                               <img class="form__pet-img" src="assets/images/fish1.png" alt="">
+                               <p class="form__pet-price"><span>250 grn</span></p>
+                           </div>
+                           <div class="form__radio-style form__radio-style--fish"></div>
+                       </label>
+                       <label class="form__lable">
+                           <input class="form__input-radio" type="radio" name="radio">
+                           <div class="form__pet">
+                               <img class="form__pet-img" src="assets/images/cow3.png" alt="">
+                               <p class="form__pet-price"><span>300 grn</span></p>
+                           </div>
+                           <div class="form__radio-style form__radio-style--rural"></div>
+                       </label>
+                    </div>
+                    <a class="inform__link" href="index_location.html">
+                       <button class="wave-btn__text">send</button>
+                       <button class="wave-btn__waves"></button>
+                   </a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <img id="top" src="assets/images/dog228.svg" alt="">
+
+     <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="footer__link" href="index_2.html">Політика конфіденційності</a>
+                <div class="footer_social">
+                    <a class="footer__social-link" href="https://www.facebook.com/">
+                        <img class="footer__social-img" src="assets/images/face.svg" alt="">
+                    </a>
+                    <a class="footer__social-link" href="https://www.instagram.com/">
+                        <img class="footer__social-img" src="assets/images/inst.svg" alt="">
+                    </a>
+                    <a class="footer__social-link" href="https://twitter.com/">
+                        <img class="footer__social-img" src="assets/images/twit.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__contacts">
+                    <a class="footer__contacts-link" href="tel:+380504564545">
+                        <img class="footer__contacts-img" src="assets/images/phone.svg" alt="">
+                      <span>+38 050 456 45 45</span>
+                    </a>
+                    <a class="footer__contacts-link" href="mailto:gmail228@gmail.com">
+                        <img class="footer__contacts-img" src="assets/images/gmail.svg" alt="">
+                       <span>gmail228@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdsHWj5C-CWkv6MSvtEvAKAydp5tUAD0&callback=initMap"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
